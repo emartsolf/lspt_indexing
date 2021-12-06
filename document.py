@@ -4,7 +4,6 @@ class Document(object):
     def __init__(self, name, numWords):
         self.docName = name
         self.numWords = numWords
-        self.score = 0
         self.positionalInfo = {}
 
     def calculateDocScore(self, tokenInfo):
@@ -32,12 +31,6 @@ class Document(object):
     
     def getName(self):
         return self.docName
-    
-    def getScore(self):
-        return self.score
-    
-    def setScore(self, newScore):
-        self.score = newScore
         
     def setPositionalInfo(self, tokenInfo):
         self.positionalInfo = tokenInfo
