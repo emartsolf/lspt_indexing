@@ -1,11 +1,9 @@
 class Document(object):
-    #tokens is a dictionary
-
     # constructor
     def __init__(self, name, numWords):
         self.docName = name
         self.numWords = numWords
-        self.tokens = {}
+        self.tokens = {} #tokens is a dictionary
 
     def calculateScore(self, tokenInfo):
         weights = {
